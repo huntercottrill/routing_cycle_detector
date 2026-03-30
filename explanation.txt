@@ -1,0 +1,5 @@
+256-way partition. Sort each bucket, group rows, one graph per claim_id & status; DFS with path stack/set for longest simple cycle.
+
+O(n) stream, O(m log m) sort per bucket. Cycle step costly in worst case; graphs stay small. RAM holds one bucket+group, not all claims.
+
+Bounded RAM vs global dict; needs temp disk; skew risks one huge bucket. Future: more buckets, external sort, prune DFS.
