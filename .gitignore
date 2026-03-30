@@ -1,8 +1,0 @@
-# Large assessment input (download separately)
-large_input*.txt
-
-__pycache__/
-*.pyc
-.Python
-.env
-.venv/
